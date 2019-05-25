@@ -29,7 +29,7 @@ func main() {
 func mustReadDataDir() string {
 	dataDir := os.Getenv("WG_DATA_DIR")
 	if dataDir == "" {
-		log.Fatal("Please set DATA_DIR env")
+		log.Fatal("Please set WG_DATA_DIR env")
 	}
 	return dataDir
 }
